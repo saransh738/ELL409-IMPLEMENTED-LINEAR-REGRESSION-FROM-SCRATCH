@@ -52,11 +52,11 @@ date of the measurement (in US format, so month comes before day), and the secon
 ## Using Run.sh
 
 `sh run.sh --part 1 --method gd --batch_size 10 --lamb 0.02 --X file.csv --polynomial 2`
-### OUTPUT
+#### OUTPUT
 weights=[0.95666953 0.79969864]
 
 `sh run.sh --part 1 --method pinv --X file.csv --polynomial 2`
-### OUTPUT
+#### OUTPUT
 weights=[0.95666953 0.79969864]
 
 --part        Part of the code to run [1].
@@ -64,6 +64,9 @@ weights=[0.95666953 0.79969864]
 --method      Method to minimise error [pinv | gd].
 
 --batch_size  Batch size to use.
+
 --lamb        Regularisation strength.
+
 --X           Complete file location.
+
 --polynomial  Degree of polynomial to fit.
