@@ -60,7 +60,9 @@ weights=[0.95666953 0.79969864]
 weights=[0.95666953 0.79969864]
 
 --part        Part of the code to run [1].
+
 --method      Method to minimise error [pinv | gd].
+
 --batch_size  Batch size to use.
 --lamb        Regularisation strength.
 --X           Complete file location.
