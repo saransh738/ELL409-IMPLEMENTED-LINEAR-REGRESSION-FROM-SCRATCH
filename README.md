@@ -1,7 +1,7 @@
 # LINEAR REGRESSION
 ## PROBLEM STATEMENT
 
-## PART 1:
+## PART 1(A):
 The objective here is to implement the concepts of regression learnt in class via polynomial curve fitting. To recap, polynomial curve fitting is an example of regression. In regression, the objective is to learn a function that maps an input variable x to a continuous target variable t.
 
 For the first part of this assignment, we provide a personalised input file that contains data of the form:
@@ -40,7 +40,7 @@ The tasks to be accomplished are:
 
 * At the end: what is your final estimate of the true underlying polynomial? Why?
 
-## PART 2:
+## PART 1(B):
 You are provided with a second personalised data set, available at https://web.iitd.ac.in/~sumeet/A1/2019MT60763/non_gaussian.csv. It is generated from a different polynomial, and the noise is now non-Gaussian. Can you repeat the analysis for this data set, focusing in particular on characterising the noise – can you figure out what kind of noise it is? Please justify your answer using appropriate analysis.
 
 ## PART 3:
