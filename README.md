@@ -47,3 +47,21 @@ You are provided with a second personalised data set, available at https://web.i
 For this part, you will be trying to model a real-world time-series data set. This contains measurements of a certain quantity at different points in time. (Details of what that quantity is will be revealed later.) The provided data sets should be downloaded from https://web.iitd.ac.in/~sumeet/A1/train.csv and https://web.iitd.ac.in/~sumeet/A1/test.csv. The train set contains 110 time points; and the test set contains another 10 points for which the measured value has been removed. In each row, the first value is the
 date of the measurement (in US format, so month comes before day), and the second value is the actual measurement.Your task is to train a linear regression model (using your above implementation along with appropriate basis functions) which can predict the missing values on the test set as accurately as possible. You are allowed to use only linear regression models for this task. Cross-validation, hyperparameter tuning and regularisation are encouraged to produce better results.
   
+# Usage
+
+## Using Run.sh
+
+sh run.sh --part 1 --method gd --batch_size 10 --lamb 0.02 --X file.csv --polynomial 2
+## OUTPUT
+weights=[0.95666953 0.79969864]
+
+sh run.sh --part 1 --method pinv --X file.csv --polynomial 2
+## OUTPUT
+weights=[0.95666953 0.79969864]
+
+--part        Part of the code to run [1].
+--method      Method to minimise error [pinv | gd].
+--batch_size  Batch size to use.
+--lambda      Regularisation strength.
+--X           Complete file location.
+--polynomial  Degree of polynomial to fit.
